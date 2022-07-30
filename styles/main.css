@@ -86,6 +86,24 @@
   border-radius: 50px;
 }
 
+.gmail {
+  position: relative;
+}
+
+.gmail__active {
+  position: absolute;
+  bottom: 20.83%;
+  height: 48px;
+  width: 344px;
+  text-align: left;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  padding: 5px 99px 13px 30px;
+  background: #113E3E;
+  color: #ffffff;
+  border-radius: 360px;
+}
+
 .partners__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,6 +183,16 @@
   float: right;
   gap: 20px;
 }
+.accelerator__swiper_button:hover {
+  cursor: pointer;
+}
+.accelerator__swiper_button:hover circle {
+  stroke: #339FD5;
+}
+.accelerator__swiper_button:hover path {
+  fill: #339FD5;
+}
+
 .swiper__wrapper {
   margin-bottom: 57px;
 }
@@ -217,7 +245,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 66px;
+  gap: 60px;
   padding: 0 96px 0 70px;
   margin-bottom: 109px;
 }
@@ -227,16 +255,6 @@
 
 .gallery {
   --s: 170px;
-  /* control the size */
-  --g: 5px;
-  /* control the gap */
-  display: -ms-grid;
-  display: grid;
-  margin: calc(var(--s) + var(--g));
-}
-
-.gallery {
-  --s: 150px;
   /* control the size */
   --g: 10px;
   /* control the gap */

@@ -30,8 +30,21 @@
 
     &__swiper_button {
 
+        &:hover {
+            cursor: pointer;
+
+            circle {
+                stroke: $mainColor;
+            }
+
+            path {
+                fill: $mainColor;
+            }
+            
+        }
     }
 }
+
 .swiper {
 
     &__wrapper {

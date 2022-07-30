@@ -2,7 +2,7 @@
 
     &__container {
         display: flex;
-        gap: 66px;
+        gap: 60px;
         padding: 0 96px 0 70px;
         margin-bottom: 109px;
     }
@@ -20,13 +20,6 @@
 
 .gallery {
     --s: 170px; /* control the size */
-    --g: 5px;  /* control the gap */
-    display: grid;
-    margin: calc(var(--s) + var(--g));
-}
-  
-.gallery {
-    --s: 150px; /* control the size */
     --g: 10px;  /* control the gap */
     display: grid;
     margin: calc(var(--s) + var(--g));

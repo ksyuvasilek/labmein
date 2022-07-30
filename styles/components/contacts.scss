@@ -31,3 +31,21 @@
         border-radius: 50px;
     }
 }
+
+.gmail {
+    position: relative;
+}
+
+.gmail__active {
+    position: absolute;
+    bottom: 20.83%;
+    height: 48px;
+    width: 344px;
+    text-align: left;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    padding: 5px 99px 13px 30px;
+    background: #113E3E;
+    color: $backgroundColor;
+    border-radius: 360px;
+}
