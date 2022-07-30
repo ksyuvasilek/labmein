@@ -1,0 +1,46 @@
+.header {
+
+    &__container {
+        background-image: url('../../img/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__content {
+        padding: 30px 76px 66px 80px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 119px;
+    }
+
+    &__title {
+        flex-grow: 1;
+    }
+}
+
+.paragraph {
+
+    &__one {
+        margin-bottom: 100px;
+    }
+
+    &__two {
+        margin-bottom: 49px;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        color: $addColor;
+    }
+}
+
+.menu {
+
+    &__list {
+        display: flex;
+        gap: 39px;
+    }
+}

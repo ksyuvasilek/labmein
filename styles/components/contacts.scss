@@ -1,0 +1,33 @@
+.contacts {
+
+    &__container {
+        display: flex;
+        gap: 129px;
+        padding: 76px 80px 88px 74px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__images {
+
+    }
+
+    &__img {
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 56px;
+        }
+    }
+
+    &__map {
+        border-radius: 50px;
+    }
+}
