@@ -5,20 +5,16 @@
     }
 
     &__content {
-        padding-top: 53px;
+        padding-top: 20px;
         padding-bottom: 29px;
     }
 
     &__title {
-        margin-bottom: 45px;
+        margin-bottom: 20px;
     }
 
     &__text {
         margin-bottom: 34px;
-    }
-
-    &__img {
-
     }
 
     &__buttons {
@@ -26,6 +22,41 @@
         display: flex;
         float: right;
         gap: 20px;
+    }
+
+    &__images {
+        position: relative;
+        width: 740px;
+        height: 450px;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    &__items {
+        position: relative;
+        height: 330px;
+        width: 470px;
+    }
+
+    &__item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    &__opacity {
+        opacity: 1;
+        visibility: visible;
     }
 
     &__swiper_button {
@@ -52,7 +83,6 @@
     }
 
     &__slide {
-        position: relative;
         display: -webkit-box;
         gap: 40px;
     }
@@ -68,48 +98,14 @@
         height: 14px;
         background: #113E3E;
         border-radius: 35px;
+        border: none;
 
         &--active {
             background: #4D2424;
         }
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
-
-
-
-
-// .accelerator {
-
-//     &__container {
-//         display: -webkit-box;
-//         gap: 40px;
-//         padding: 66px 126px 57px 106px;
-//     }
-
-//     &__right {
-//         padding-top: 53px;
-//         padding-bottom: 29px;
-
-//     }
-
-//     &__title {
-//         margin-bottom: 45px;
-//     }
-
-//     &__text {
-//         margin-bottom: 34px;
-//     }
-
-//     &__img {
-
-//     }
-
-//     &__buttons {
-//         display: flex;
-//         gap: 20px;
-//     }
-
-//     &__swiper_button {
-
-//     }
-// }

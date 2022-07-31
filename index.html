@@ -59,23 +59,39 @@
         <div class="swiper accelerator__swiper">
             <div class="swiper__wrapper">
                 <div class="swiper__slide">
-                    <img src="img/accelerator/competition1.png" alt="accelerator1 image" class="accelerator__img">
+                    <div class="accelerator__images">
+                        <img src="img/accelerator/competition1.png" alt="accelerator1 image" class="accelerator__img accelerator__opacity">
+                        <img src="img/accelerator/competition2.png" alt="accelerator1 image" class="accelerator__img">
+                    </div>
                     <div class="accelerator__content">
-                        <h2 class="accelerator__title">Акселератор Сбера:</h2>
-                        <div class="accelerator__text">
-                            <h5>Проект Labmein в настоящее</h5>
-                            <h5>время участвует в</h5>
-                            <h5>акселераторе Сбера,</h5>
-                            <h5>пройдя на второй этап 3 июня.</h5>
+                        <div class="accelerator__items">
+                            <div class="accelerator__item accelerator__opacity">
+                                <h2 class="accelerator__title">Форум "Сильные идеи</br> для нового времени":</h2>
+                                <div class="accelerator__text">
+                                    <h5>Проект Labmein попал в ТОП-100</h5>
+                                    <h5>проектов России и 9 место в</h5>
+                                    <h5>направлении "Национальная технологическая</h5>
+                                    <h5>инициатива".</h5>
+                                </div>
+                            </div>
+                            <div class="accelerator__item">
+                                <h2 class="accelerator__title">Акселератор Сбера:</h2>
+                                <div class="accelerator__text">
+                                    <h5>Проект Labmein в настоящее</h5>
+                                    <h5>время участвует в</h5>
+                                    <h5>акселераторе Сбера,</h5>
+                                    <h5>пройдя на второй этап 3 июня.</h5>
+                                </div> 
+                            </div>
                         </div>
                         <div class="accelerator__buttons">
-                            <div class="swiper__button-next">
+                            <div class="swiper__button-prev">
                                 <svg class="accelerator__swiper_button" width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="36.5" cy="36.5" r="34.5" transform="rotate(-180 36.5 36.5)" stroke="black" stroke-width="4"/>
                                     <path d="M18.0987 34.0251C16.7318 35.392 16.7318 37.608 18.0987 38.9749L40.3725 61.2487C41.7394 62.6156 43.9554 62.6156 45.3223 61.2487C46.6891 59.8819 46.6891 57.6658 45.3223 56.299L25.5233 36.5L45.3223 16.701C46.6891 15.3342 46.6891 13.1181 45.3223 11.7513C43.9554 10.3844 41.7394 10.3844 40.3725 11.7513L18.0987 34.0251ZM22.5645 33H20.5735V40H22.5645V33Z" fill="black"/>
                                 </svg>
                             </div>
-                            <div class="swiper__button-prev">
+                            <div class="swiper__button-next">
                                 <svg class="accelerator__swiper_button" width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="36.5" cy="36.5" r="34.5" stroke="black" stroke-width="4"/>
                                     <path d="M54.9013 38.9749C56.2682 37.608 56.2682 35.392 54.9013 34.0251L32.6275 11.7513C31.2606 10.3844 29.0446 10.3844 27.6777 11.7513C26.3109 13.1181 26.3109 15.3342 27.6777 16.701L47.4767 36.5L27.6777 56.299C26.3109 57.6658 26.3109 59.8819 27.6777 61.2487C29.0446 62.6156 31.2606 62.6156 32.6275 61.2487L54.9013 38.9749ZM50.4355 40H52.4265V33H50.4355V40Z" fill="black"/>
@@ -85,14 +101,11 @@
                         <div class="swiper__pagination"></div>
                     </div>
                 </div>
-                <!-- <div class="swiper-slide">
-                    <img src="img/accelerator/competition2.png" alt="accelerator2 image" class="accelerator__img">
-                </div> -->
             </div>
             <div class="swiper__blocks">
-                <div class="swiper__block swiper__block--active"></div>
-                <div class="swiper__block"></div>
-                <div class="swiper__block"></div>
+                <button class="swiper__block swiper__block--active"></button>
+                <button class="swiper__block"></button>
+                <!-- <button class="swiper__block"></button> -->
             </div>
         </div>
     </section>
@@ -160,8 +173,8 @@
                 <img src="img/icons/phone.svg" alt="phone" class="contacts__img">
                 <img src="img/icons/address.svg" alt="address" class="contacts__img">
             </div>
-            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563.58676166937!2d37.35056720874711!3d55.78613767895698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54607e4f73337%3A0xc8bedfe69522016e!2z0J3QsNCx0LXRgNC10LbQvdCw0Y8g0YPQuy4sIDI0LCDQnNC-0YHQutCy0LAsIDEyMTUwMA!5e0!3m2!1sru!2sru!4v1659195362541!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1563.58676166937!2d37.35056720874711!3d55.78613767895698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54607e4f73337%3A0xc8bedfe69522016e!2z0J3QsNCx0LXRgNC10LbQvdCw0Y8g0YPQuy4sIDI0LCDQnNC-0YHQutCy0LAsIDEyMTUwMA!5e0!3m2!1sru!2sru!4v1659195362541!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 <!-- 
     <div class="gmail">

@@ -2,14 +2,16 @@
 
     &__container {
         display: flex;
-        gap: 129px;
+        flex-wrap: wrap;
+        gap: 90px;
         padding: 76px 80px 88px 74px;
     }
 
     &__content {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        gap: 40px;
+        // gap: 40px;
     }
 
     &__images {
