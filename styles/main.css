@@ -283,6 +283,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 60px;
   padding: 0 96px 0 70px;
   margin-bottom: 109px;
 }
@@ -307,6 +308,9 @@
   display: -ms-grid;
   display: grid;
   margin: calc(var(--s) + var(--g));
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .gallery > img {
