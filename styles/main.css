@@ -283,15 +283,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 60px;
   padding: 0 96px 0 70px;
   margin-bottom: 109px;
 }
 .description__title {
   margin-bottom: 35px;
 }
+.big_image {
+  --_t: 3.2 !important;
+  --_x: 0 !important;
+  --_y: 0 !important;
+  -webkit-filter: grayscale(0) !important;
+          filter: grayscale(0) !important;
+  z-index: 2 !important;
+}
 
 .gallery {
+  width: 100%;
   --s: 170px;
   /* control the size */
   --g: 10px;
@@ -335,12 +343,12 @@
 
 .gallery > img:nth-child(7) {
   --_x:calc( 70% + var(--g));
-  --_y:calc(57% - .87*var(--g));
+  --_y:calc(55% - .87*var(--g));
 }
 
 .gallery > img:nth-child(3) {
   --_y:calc(-46% - .87*var(--g));
-  --_x:calc(84.5% - .87*var(--g));
+  --_x:calc(82% - .87*var(--g));
 }
 
 .gallery > img:nth-child(5) {
@@ -358,7 +366,7 @@
 }
 
 .gallery > img:nth-child(4) {
-  --_x:calc(-74% - .5*var(--g));
+  --_x:calc(-73% - .5*var(--g));
 }
 
 .gallery > img:nth-child(5),
@@ -370,12 +378,6 @@ body {
   color: #000000;
   font-family: "Golos UI";
   margin: 0;
-}
-
-.container {
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 h1 {

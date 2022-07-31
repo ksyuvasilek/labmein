@@ -37,3 +37,36 @@ function slider() {
 }
 
 slider()
+
+const items_texts = [["Заголовок1", "Текст1"], ["Заголовок2", "Текст2"], ["Заголовок3", "Текст3"], ["Заголовок4", "Текст4"], ["Заголовок1", "Текст1"], ["Заголовок2", "Текст2"], ["Заголовок3", "Текст3"], ["Заголовок4", "Текст4"]]
+const items_default = ["Hello", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc blandit in volutpat senectus nullam congue fermentum, egestas. Purus velit cum proin at risus proin vivamus lectus et. Sed fermentum ullamcorper leo ipsum, nec volutpat dignissim. Sed tellus felis purus, quisque enim magna dolor facilisis sed."]
+
+function description() {
+    const block_center = document.body.querySelector(".block_center")
+    const block_left = document.body.querySelector(".block_left")
+    const block_right = document.body.querySelector(".block_right")
+    const block_left_up = document.body.querySelector(".block_left_up")
+    const block_left_down = document.body.querySelector(".block_left_down")
+    const block_right_up = document.body.querySelector(".block_right_up")
+    const block_right_down = document.body.querySelector(".block_right_down")
+    const blocks = [block_center, block_left, block_right, block_left_up, block_left_down, block_right_up, block_right_down]
+    const description__title = document.body.querySelector(".description__title")
+    const description__text = document.body.querySelector(".description__text") 
+
+    blocks.forEach((element) => {
+        element.addEventListener('click', evt => {
+            evt.preventDefault()
+            if (element.classList.contains("big_image")) {
+                description__title.textContent = items_default[0]
+                description__text.textContent = items_default[1]
+                element.classList.remove("big_image")
+            } else {
+                element.classList.add("big_image")
+                description__title.textContent = items_texts[blocks.indexOf(element)][0]
+                description__text.textContent = items_texts[blocks.indexOf(element)][1]
+            }
+        })
+    })
+}
+
+description()
