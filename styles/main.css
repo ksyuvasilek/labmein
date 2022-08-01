@@ -64,41 +64,67 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 90px;
   padding: 76px 80px 88px 74px;
+}
+.contacts__content {
+  width: 100%;
 }
 .contacts__images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 80px;
+}
+.contacts__img {
+  position: relative;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 .contacts__img:hover {
   cursor: pointer;
 }
-.contacts__map {
-  border-radius: 50px;
-}
-
-.gmail {
-  position: relative;
-}
-
-.gmail__active {
-  position: absolute;
-  bottom: 20.83%;
-  height: 48px;
-  width: 344px;
+.contacts__text {
+  opacity: 0;
+  width: 0px;
   text-align: left;
   letter-spacing: -0.02em;
+  font-size: 30px;
   font-weight: 500;
-  padding: 5px 99px 13px 30px;
+  padding: 0;
   background: #113E3E;
   color: #ffffff;
   border-radius: 360px;
+  z-index: -1;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts__item.active > .contacts__img {
+  left: -80px;
+}
+.contacts__item.active > .contacts__text {
+  opacity: 1;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 3px 90px 16px 15px;
+}
+.contacts__map {
+  border-radius: 50px;
+  margin-bottom: 20px;
 }
 
 .partners__container {

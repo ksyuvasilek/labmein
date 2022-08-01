@@ -38,7 +38,7 @@ function slider() {
 
 slider()
 
-const items_texts = [["Заголовок1", "Текст1"], ["Заголовок2", "Текст2"], ["Заголовок3", "Текст3"], ["Заголовок4", "Текст4"], ["Заголовок1", "Текст1"], ["Заголовок2", "Текст2"], ["Заголовок3", "Текст3"], ["Заголовок4", "Текст4"]]
+const items_texts = [["Заголовок1", "Текст1"], ["Заголовок2", "Текст2"], ["Заголовок3", "Текст3"], ["Заголовок4", "Текст4"], ["Заголовок5", "Текст5"], ["Заголовок6", "Текст6"], ["Заголовок7", "Текст7"]]
 const items_default = ["Hello", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc blandit in volutpat senectus nullam congue fermentum, egestas. Purus velit cum proin at risus proin vivamus lectus et. Sed fermentum ullamcorper leo ipsum, nec volutpat dignissim. Sed tellus felis purus, quisque enim magna dolor facilisis sed."]
 
 function description() {
@@ -70,3 +70,27 @@ function description() {
 }
 
 description()
+
+function contacts() {
+    const contacts__item = document.body.querySelectorAll(".contacts__item")
+    let current
+
+    contacts__item.forEach((element) => {
+        const contacts__img = element.querySelector(".contacts__img")
+        contacts__img.addEventListener('click', evt => {
+            evt.preventDefault()
+            if (element.classList.contains("active")) {
+                element.classList.remove("active")
+                current = undefined
+            } else {
+                if (current !== undefined) {
+                    current.classList.remove("active")
+                }
+                current = element
+                element.classList.add("active")
+            }
+        })
+    })
+}
+
+contacts()
