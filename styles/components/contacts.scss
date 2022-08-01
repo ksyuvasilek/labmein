@@ -15,7 +15,6 @@
     &__images {
         display: flex;
         justify-content: space-evenly;
-        padding-bottom: 80px;
     }
 
     &__img {
@@ -44,6 +43,10 @@
         border-radius: 360px;
         z-index: -1;
         transition: .7s;
+    }
+
+    &__address {
+        font-size: 24px;
     }
 
     &__item {

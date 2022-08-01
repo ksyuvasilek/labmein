@@ -79,7 +79,6 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-bottom: 80px;
 }
 .contacts__img {
   position: relative;
@@ -103,6 +102,9 @@
   z-index: -1;
   -webkit-transition: 0.7s;
   transition: 0.7s;
+}
+.contacts__address {
+  font-size: 24px;
 }
 .contacts__item {
   display: -webkit-box;
